@@ -6,9 +6,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_02350_FinalProject"
         mc:Ignorable="d"
-        Title="MainWindow" Height="600" Width="800">
+        Title="BestClassdiagramModelerEU"
+        WindowState="Maximized"
+        WindowStyle="SingleBorderWindow"
+        ResizeMode="CanResize"
+        MinHeight="480"
+        MinWidth="620">
     <DockPanel>
-        <userControls:MenuUserControl DockPanel.Dock="Top"/>
+        <StackPanel DockPanel.Dock="Top">
+            <userControls:MenuBarUserControl/>
+            <userControls:ToolBarUserControl/>
+        </StackPanel>
+        
         <userControls:SidePanelUserControl/>
         <StackPanel DockPanel.Dock="Bottom">
         </StackPanel>

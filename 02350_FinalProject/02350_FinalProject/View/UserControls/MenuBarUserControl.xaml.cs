@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace _02350_FinalProject.View.UserControls
 {
     /// <summary>
-    /// Interaction logic for MenuUserControl.xaml
+    /// Interaction logic for MenuBarUserControl.xaml
     /// </summary>
-    public partial class MenuUserControl : UserControl
+    public partial class MenuBarUserControl : UserControl
     {
-        public MenuUserControl()
+        public MenuBarUserControl()
         {
             InitializeComponent();
         }

@@ -5,12 +5,57 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:_02350_FinalProject.View.UserControls"
              mc:Ignorable="d" 
-             d:DesignHeight="500" d:DesignWidth="260">
-    <Expander ExpandDirection="Left">
-        <StackPanel>
-            <GroupBox Header="Shapes">
-                
-            </GroupBox>
+             d:DesignHeight="500" d:DesignWidth="250">
+    <Expander ExpandDirection="Right">
+        <StackPanel Name="Container">
+            <StackPanel>
+                <Button HorizontalContentAlignment="Left">
+                    <WrapPanel>
+                        <Image Width="40" Source="/02350_FinalProject;component/Images/Class_100x100.png"/>
+                        <Label VerticalAlignment="Center" FontSize="16" FontWeight="Bold">Class</Label>
+                    </WrapPanel>
+                </Button>
+            </StackPanel>
+            <StackPanel>
+                <Button HorizontalContentAlignment="Left">
+                    <WrapPanel>
+                        <Image Width="40" Source="/02350_FinalProject;component/Images/Usage_100x100.png"/>
+                        <Label VerticalAlignment="Center" FontSize="16" FontWeight="Bold">Usage</Label>
+                    </WrapPanel>
+                </Button>
+            </StackPanel>
+            <StackPanel>
+                <Button HorizontalContentAlignment="Left">
+                    <WrapPanel>
+                        <Image Width="40" Source="/02350_FinalProject;component/Images/Unidir_100x100.png"/>
+                        <Label VerticalAlignment="Center" FontSize="16" FontWeight="Bold">Unidir. Association</Label>
+                    </WrapPanel>
+                </Button>
+            </StackPanel>
+            <StackPanel>
+                <Button HorizontalContentAlignment="Left">
+                    <WrapPanel>
+                        <Image Width="40" Source="/02350_FinalProject;component/Images/Bidir_100x100.png"/>
+                        <Label VerticalAlignment="Center" FontSize="16" FontWeight="Bold">Bidir. Association</Label>
+                    </WrapPanel>
+                </Button>
+            </StackPanel>
+            <StackPanel>
+                <Button HorizontalContentAlignment="Left">
+                    <WrapPanel>
+                        <Image Width="40" Source="/02350_FinalProject;component/Images/Composition_100x100.png"/>
+                        <Label VerticalAlignment="Center" FontSize="16" FontWeight="Bold">Composition</Label>
+                    </WrapPanel>
+                </Button>
+            </StackPanel>
+            <StackPanel>
+                <Button HorizontalContentAlignment="Left">
+                    <WrapPanel>
+                        <Image Width="40" Source="/02350_FinalProject;component/Images/Comment_100x100.png"/>
+                        <Label VerticalAlignment="Center" FontSize="16" FontWeight="Bold">Comment</Label>
+                    </WrapPanel>
+                </Button>
+            </StackPanel>
         </StackPanel>
     </Expander>
 </UserControl>

@@ -55,8 +55,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="View\UserControls\MenuUserControl.xaml.cs">
-      <DependentUpon>MenuUserControl.xaml</DependentUpon>
+    <Compile Include="View\UserControls\MenuBarUserControl.xaml.cs">
+      <DependentUpon>MenuBarUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControls\ToolBarUserControl.xaml.cs">
+      <DependentUpon>ToolBarUserControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\UserControls\SidePanelUserControl.xaml.cs">
       <DependentUpon>SidePanelUserControl.xaml</DependentUpon>
@@ -73,7 +76,11 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="View\UserControls\MenuUserControl.xaml">
+    <Page Include="View\UserControls\MenuBarUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\UserControls\ToolBarUserControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -110,7 +117,14 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Images\" />
+    <Resource Include="Images\Bidir_100x100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Class_100x100.png" />
+    <Resource Include="Images\Comment_100x100.png" />
+    <Resource Include="Images\Composition_100x100.png" />
+    <Resource Include="Images\Unidir_100x100.png" />
+    <Resource Include="Images\Usage_100x100.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
