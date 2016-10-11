@@ -6,6 +6,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_02350_FinalProject"
         mc:Ignorable="d"
+        Icon="/02350_FinalProject;component/Images/Class_100x100.png"
         Title="BestClassdiagramModelerEU"
         WindowState="Maximized"
         WindowStyle="SingleBorderWindow"
@@ -17,10 +18,14 @@
             <userControls:MenuBarUserControl/>
             <userControls:ToolBarUserControl/>
         </StackPanel>
-        
-        <userControls:SidePanelUserControl/>
         <StackPanel DockPanel.Dock="Bottom">
+            <StatusBar DockPanel.Dock="Bottom">
+                <StatusBarItem>
+                    <TextBlock>Dette er en status bar</TextBlock>
+                </StatusBarItem>
+            </StatusBar>
         </StackPanel>
+        <userControls:SidePanelUserControl/>
         <Grid>
             <Grid.Background>
                 <VisualBrush TileMode="Tile"

@@ -7,23 +7,35 @@
              mc:Ignorable="d" 
              d:DesignHeight="40" d:DesignWidth="800">
     <ToolBar x:Name="across">
-        <Button Width="20" Background="Aqua" Height="{Binding ActualWidth, Mode=OneWay, RelativeSource={RelativeSource Self}}" Margin="0,0,5,0">
-            Ny
+        <Button Width="20" Height="{Binding ActualWidth, Mode=OneWay, RelativeSource={RelativeSource Self}}" Margin="0,0,5,0">
+            <Button.Background>
+                <ImageBrush ImageSource="/02350_FinalProject;component/Images/Icons/AddControl_371.png"/>
+            </Button.Background>
         </Button>
-        <Button Width="20" Background="Aqua" Height="{Binding ActualWidth, Mode=OneWay, RelativeSource={RelativeSource Self}}" Margin="0,0,5,0">
-            Åben
+        <Button Width="20" Height="{Binding ActualWidth, Mode=OneWay, RelativeSource={RelativeSource Self}}" Margin="0,0,5,0">
+            <Button.Background>
+                <ImageBrush ImageSource="/02350_FinalProject;component/Images/Icons/Open_6529.png"/>
+            </Button.Background>
         </Button>
-        <Button Width="20" Background="Aqua" Height="{Binding ActualWidth, Mode=OneWay, RelativeSource={RelativeSource Self}}" Margin="0,0,5,0">
-            Gem
+        <Button Width="20" Height="{Binding ActualWidth, Mode=OneWay, RelativeSource={RelativeSource Self}}" Margin="0,0,5,0">
+            <Button.Background>
+                <ImageBrush ImageSource="/02350_FinalProject;component/Images/Icons/Save_6530.png"/>
+            </Button.Background>
         </Button>
-        <Button Width="20" Background="Aqua" Height="{Binding ActualWidth, Mode=OneWay, RelativeSource={RelativeSource Self}}" Margin="0,0,5,0">
-            Redu
+        <Button Width="20" Height="{Binding ActualWidth, Mode=OneWay, RelativeSource={RelativeSource Self}}" Margin="0,0,5,0">
+            <Button.Background>
+                <ImageBrush ImageSource="/02350_FinalProject;component/Images/Icons/Redo_16x.png"/>
+            </Button.Background>
         </Button>
-        <Button Background="Aqua" Width="20" Height="{Binding ActualWidth, Mode=OneWay, RelativeSource={RelativeSource Self}}" Margin="0,0,5,0">
-            Undo
+        <Button Width="20" Height="{Binding ActualWidth, Mode=OneWay, RelativeSource={RelativeSource Self}}" Margin="0,0,5,0">
+            <Button.Background>
+                <ImageBrush ImageSource="/02350_FinalProject;component/Images/Icons/Undo_16x.png"/>
+            </Button.Background>
         </Button>
-        <Button Background="Aqua" Width="20" Height="{Binding ActualWidth, Mode=OneWay, RelativeSource={RelativeSource Self}}" Margin="0,0,5,0">
-            Eksporter
+        <Button Width="20" Height="{Binding ActualWidth, Mode=OneWay, RelativeSource={RelativeSource Self}}" Margin="0,0,5,0">
+            <Button.Background>
+                <ImageBrush ImageSource="/02350_FinalProject;component/Images/Icons/Image_16x.png"/>
+            </Button.Background>
         </Button>
 
     </ToolBar>

@@ -126,6 +126,36 @@
     <Resource Include="Images\Unidir_100x100.png" />
     <Resource Include="Images\Usage_100x100.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Icons\AddControl_371.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Icons\Redo_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Icons\Undo_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Icons\Open_6529.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Icons\Save_6530.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Icons\Image_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Icons\Cut_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Icons\Copy_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Icons\Paste_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Icons\Close_16x.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
