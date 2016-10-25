@@ -6,7 +6,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_02350_FinalProject"
         mc:Ignorable="d"
-        Icon="/02350_FinalProject;component/Images/Class_100x100.png"
+        Icon="/02350_FinalProject;component/Images/DiagramObjects/Class_100x100.png"
         Title="BestClassdiagramModelerEU"
         WindowState="Maximized"
         WindowStyle="SingleBorderWindow"

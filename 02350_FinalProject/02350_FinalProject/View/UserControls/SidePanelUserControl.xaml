@@ -11,7 +11,7 @@
             <StackPanel>
                 <Button HorizontalContentAlignment="Left">
                     <WrapPanel>
-                        <Image Width="40" Source="/02350_FinalProject;component/Images/Class_100x100.png"/>
+                        <Image Width="40" Source="/02350_FinalProject;component/Images/DiagramObjects/Class_100x100.png"/>
                         <Label VerticalAlignment="Center" FontSize="16" FontWeight="Bold">Class</Label>
                     </WrapPanel>
                 </Button>
@@ -19,7 +19,7 @@
             <StackPanel>
                 <Button HorizontalContentAlignment="Left">
                     <WrapPanel>
-                        <Image Width="40" Source="/02350_FinalProject;component/Images/Usage_100x100.png"/>
+                        <Image Width="40" Source="/02350_FinalProject;component/Images/DiagramObjects/Usage_100x100.png"/>
                         <Label VerticalAlignment="Center" FontSize="16" FontWeight="Bold">Usage</Label>
                     </WrapPanel>
                 </Button>
@@ -27,7 +27,7 @@
             <StackPanel>
                 <Button HorizontalContentAlignment="Left">
                     <WrapPanel>
-                        <Image Width="40" Source="/02350_FinalProject;component/Images/Unidir_100x100.png"/>
+                        <Image Width="40" Source="/02350_FinalProject;component/Images/DiagramObjects/Unidir_100x100.png"/>
                         <Label VerticalAlignment="Center" FontSize="16" FontWeight="Bold">Unidir. Association</Label>
                     </WrapPanel>
                 </Button>
@@ -35,7 +35,7 @@
             <StackPanel>
                 <Button HorizontalContentAlignment="Left">
                     <WrapPanel>
-                        <Image Width="40" Source="/02350_FinalProject;component/Images/Bidir_100x100.png"/>
+                        <Image Width="40" Source="/02350_FinalProject;component/Images/DiagramObjects/Bidir_100x100.png"/>
                         <Label VerticalAlignment="Center" FontSize="16" FontWeight="Bold">Bidir. Association</Label>
                     </WrapPanel>
                 </Button>
@@ -43,7 +43,7 @@
             <StackPanel>
                 <Button HorizontalContentAlignment="Left">
                     <WrapPanel>
-                        <Image Width="40" Source="/02350_FinalProject;component/Images/Composition_100x100.png"/>
+                        <Image Width="40" Source="/02350_FinalProject;component/Images/DiagramObjects/Composition_100x100.png"/>
                         <Label VerticalAlignment="Center" FontSize="16" FontWeight="Bold">Composition</Label>
                     </WrapPanel>
                 </Button>
@@ -51,7 +51,7 @@
             <StackPanel>
                 <Button HorizontalContentAlignment="Left">
                     <WrapPanel>
-                        <Image Width="40" Source="/02350_FinalProject;component/Images/Comment_100x100.png"/>
+                        <Image Width="40" Source="/02350_FinalProject;component/Images/DiagramObjects/Comment_100x100.png"/>
                         <Label VerticalAlignment="Center" FontSize="16" FontWeight="Bold">Comment</Label>
                     </WrapPanel>
                 </Button>

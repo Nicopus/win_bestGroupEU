@@ -37,6 +37,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -55,6 +57,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ViewModel\BaseViewModel.cs" />
+    <Compile Include="ViewModel\Connections\ConnectionViewModel.cs" />
+    <Compile Include="ViewModel\Connections\UsageViewModel.cs" />
     <Compile Include="View\UserControls\MenuBarUserControl.xaml.cs">
       <DependentUpon>MenuBarUserControl.xaml</DependentUpon>
     </Compile>
@@ -117,14 +122,14 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\Bidir_100x100.png" />
+    <Resource Include="Images\DiagramObjects\Bidir_100x100.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\Class_100x100.png" />
-    <Resource Include="Images\Comment_100x100.png" />
-    <Resource Include="Images\Composition_100x100.png" />
-    <Resource Include="Images\Unidir_100x100.png" />
-    <Resource Include="Images\Usage_100x100.png" />
+    <Resource Include="Images\DiagramObjects\Class_100x100.png" />
+    <Resource Include="Images\DiagramObjects\Comment_100x100.png" />
+    <Resource Include="Images\DiagramObjects\Composition_100x100.png" />
+    <Resource Include="Images\DiagramObjects\Unidir_100x100.png" />
+    <Resource Include="Images\DiagramObjects\Usage_100x100.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\Icons\AddControl_371.png" />
@@ -155,6 +160,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\Icons\Close_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ViewModel\Objects\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
