@@ -9,52 +9,52 @@
     <Expander ExpandDirection="Right">
         <StackPanel>
             <StackPanel>
-                <Button HorizontalContentAlignment="Left">
+                <ToggleButton HorizontalContentAlignment="Left" IsChecked="{Binding IsAddingClassPressed}">
                     <WrapPanel>
                         <Image Width="40" Source="/02350_FinalProject;component/Images/DiagramObjects/Class_100x100.png"/>
-                        <Label VerticalAlignment="Center" FontSize="16" FontWeight="Bold">Class</Label>
+                        <Label Content="Class" VerticalAlignment="Center" FontSize="16" FontWeight="Bold"/>
                     </WrapPanel>
-                </Button>
+                </ToggleButton>
             </StackPanel>
             <StackPanel>
-                <Button HorizontalContentAlignment="Left">
+                <ToggleButton HorizontalContentAlignment="Left" IsChecked="{Binding IsAddingUsagePressed}">
                     <WrapPanel>
                         <Image Width="40" Source="/02350_FinalProject;component/Images/DiagramObjects/Usage_100x100.png"/>
-                        <Label VerticalAlignment="Center" FontSize="16" FontWeight="Bold">Usage</Label>
+                        <Label Content="Usage" VerticalAlignment="Center" FontSize="16" FontWeight="Bold"/>
                     </WrapPanel>
-                </Button>
+                </ToggleButton>
             </StackPanel>
             <StackPanel>
-                <Button HorizontalContentAlignment="Left">
+                <ToggleButton HorizontalContentAlignment="Left" IsChecked="{Binding IsAddingUnidirPressed}">
                     <WrapPanel>
                         <Image Width="40" Source="/02350_FinalProject;component/Images/DiagramObjects/Unidir_100x100.png"/>
-                        <Label VerticalAlignment="Center" FontSize="16" FontWeight="Bold">Unidir. Association</Label>
+                        <Label Content="Unidir. Association" VerticalAlignment="Center" FontSize="16" FontWeight="Bold"/>
                     </WrapPanel>
-                </Button>
+                </ToggleButton>
             </StackPanel>
             <StackPanel>
-                <Button HorizontalContentAlignment="Left">
+                <ToggleButton HorizontalContentAlignment="Left" IsChecked="{Binding IsAddingBidirPressed}">
                     <WrapPanel>
                         <Image Width="40" Source="/02350_FinalProject;component/Images/DiagramObjects/Bidir_100x100.png"/>
-                        <Label VerticalAlignment="Center" FontSize="16" FontWeight="Bold">Bidir. Association</Label>
+                        <Label Content="Bidir. Association" VerticalAlignment="Center" FontSize="16" FontWeight="Bold"/>
                     </WrapPanel>
-                </Button>
+                </ToggleButton>
             </StackPanel>
             <StackPanel>
-                <Button HorizontalContentAlignment="Left">
+                <ToggleButton HorizontalContentAlignment="Left" IsChecked="{Binding IsAddingCompPressed}">
                     <WrapPanel>
                         <Image Width="40" Source="/02350_FinalProject;component/Images/DiagramObjects/Composition_100x100.png"/>
-                        <Label VerticalAlignment="Center" FontSize="16" FontWeight="Bold">Composition</Label>
+                        <Label Content="Composition" VerticalAlignment="Center" FontSize="16" FontWeight="Bold"/>
                     </WrapPanel>
-                </Button>
+                </ToggleButton>
             </StackPanel>
             <StackPanel>
-                <Button HorizontalContentAlignment="Left">
+                <ToggleButton HorizontalContentAlignment="Left" IsChecked="{Binding IsAddingCommentPressed}">
                     <WrapPanel>
                         <Image Width="40" Source="/02350_FinalProject;component/Images/DiagramObjects/Comment_100x100.png"/>
-                        <Label VerticalAlignment="Center" FontSize="16" FontWeight="Bold">Comment</Label>
+                        <Label Content="Comment" VerticalAlignment="Center" FontSize="16" FontWeight="Bold"/>
                     </WrapPanel>
-                </Button>
+                </ToggleButton>
             </StackPanel>
         </StackPanel>
     </Expander>

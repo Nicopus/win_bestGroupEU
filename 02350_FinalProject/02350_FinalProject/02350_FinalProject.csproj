@@ -68,6 +68,7 @@
     <Compile Include="ViewModel\BaseViewModel.cs" />
     <Compile Include="ViewModel\Connections\ConnectionViewModel.cs" />
     <Compile Include="ViewModel\Connections\UsageViewModel.cs" />
+    <Compile Include="ViewModel\MainViewModel.cs" />
     <Compile Include="ViewModel\Objects\ObjectViewModel.cs" />
     <Compile Include="View\UserControls\ClassUserControl.xaml.cs">
       <DependentUpon>ClassUserControl.xaml</DependentUpon>
