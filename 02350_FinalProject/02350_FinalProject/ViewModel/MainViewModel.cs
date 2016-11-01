@@ -1,8 +1,10 @@
-﻿using System;
+﻿using GalaSoft.MvvmLight.CommandWpf;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 
 namespace _02350_FinalProject.ViewModel
 {
@@ -133,6 +135,19 @@ namespace _02350_FinalProject.ViewModel
                 OnPropertyChanged();
                 System.Diagnostics.Debug.WriteLine(_isAddingCommentPressed);
             }
+        }
+
+        public RelayCommand<MouseButtonEventArgs> CreateShapeInCanvasCommand
+            => new RelayCommand<MouseButtonEventArgs>(OnClickCreateObject, CanCreateObject);
+
+        private bool CanCreateObject(MouseButtonEventArgs e)
+        {
+            return IsAddingClassPressed;
+        }
+
+        private void OnClickCreateObject(MouseButtonEventArgs e)
+        {
+            System.Diagnostics.Debug.WriteLine("Det virker");
         }
 
     }
