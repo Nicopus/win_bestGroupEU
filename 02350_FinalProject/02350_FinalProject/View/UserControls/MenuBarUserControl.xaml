@@ -6,7 +6,6 @@
              xmlns:local="clr-namespace:_02350_FinalProject.View.UserControls"
              mc:Ignorable="d" 
              d:DesignWidth="800">
-    <!-- tis jer selv i øjet -->
     <Menu>
         <MenuItem Header="_File">
             <MenuItem Header="_New">
