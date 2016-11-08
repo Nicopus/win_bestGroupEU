@@ -9,7 +9,8 @@
     <Expander ExpandDirection="Right">
         <StackPanel>
             <StackPanel>
-                <ToggleButton HorizontalContentAlignment="Left" IsChecked="{Binding IsAddingClassPressed}">
+                <ToggleButton HorizontalContentAlignment="Left" IsChecked="{Binding IsAddingClassPressed}" Command="{
+                    Binding ClassPressedCommand}">
                     <WrapPanel>
                         <Image Width="40" Source="/02350_FinalProject;component/Images/DiagramObjects/Class_100x100.png"/>
                         <Label Content="Class" VerticalAlignment="Center" FontSize="16" FontWeight="Bold"/>
@@ -17,7 +18,8 @@
                 </ToggleButton>
             </StackPanel>
             <StackPanel>
-                <ToggleButton HorizontalContentAlignment="Left" IsChecked="{Binding IsAddingUsagePressed}">
+                <ToggleButton HorizontalContentAlignment="Left" IsChecked="{Binding IsAddingUsagePressed}" Command="{
+                    Binding UsagePressedCommand}">
                     <WrapPanel>
                         <Image Width="40" Source="/02350_FinalProject;component/Images/DiagramObjects/Usage_100x100.png"/>
                         <Label Content="Usage" VerticalAlignment="Center" FontSize="16" FontWeight="Bold"/>
@@ -25,7 +27,8 @@
                 </ToggleButton>
             </StackPanel>
             <StackPanel>
-                <ToggleButton HorizontalContentAlignment="Left" IsChecked="{Binding IsAddingUnidirPressed}">
+                <ToggleButton HorizontalContentAlignment="Left" IsChecked="{Binding IsAddingUnidirPressed}" Command="{
+                    Binding UnidirPressedCommand}">
                     <WrapPanel>
                         <Image Width="40" Source="/02350_FinalProject;component/Images/DiagramObjects/Unidir_100x100.png"/>
                         <Label Content="Unidir. Association" VerticalAlignment="Center" FontSize="16" FontWeight="Bold"/>
@@ -33,7 +36,8 @@
                 </ToggleButton>
             </StackPanel>
             <StackPanel>
-                <ToggleButton HorizontalContentAlignment="Left" IsChecked="{Binding IsAddingBidirPressed}">
+                <ToggleButton HorizontalContentAlignment="Left" IsChecked="{Binding IsAddingBidirPressed}" Command="{
+                    Binding BidirPressedCommand}">
                     <WrapPanel>
                         <Image Width="40" Source="/02350_FinalProject;component/Images/DiagramObjects/Bidir_100x100.png"/>
                         <Label Content="Bidir. Association" VerticalAlignment="Center" FontSize="16" FontWeight="Bold"/>
@@ -41,7 +45,8 @@
                 </ToggleButton>
             </StackPanel>
             <StackPanel>
-                <ToggleButton HorizontalContentAlignment="Left" IsChecked="{Binding IsAddingCompPressed}">
+                <ToggleButton HorizontalContentAlignment="Left" IsChecked="{Binding IsAddingCompPressed}" Command="{
+                    Binding CompPressedCommand}">
                     <WrapPanel>
                         <Image Width="40" Source="/02350_FinalProject;component/Images/DiagramObjects/Composition_100x100.png"/>
                         <Label Content="Composition" VerticalAlignment="Center" FontSize="16" FontWeight="Bold"/>
@@ -49,7 +54,8 @@
                 </ToggleButton>
             </StackPanel>
             <StackPanel>
-                <ToggleButton HorizontalContentAlignment="Left" IsChecked="{Binding IsAddingCommentPressed}">
+                <ToggleButton HorizontalContentAlignment="Left" IsChecked="{Binding IsAddingCommentPressed}" Command="{
+                    Binding CommentPressedCommand}">
                     <WrapPanel>
                         <Image Width="40" Source="/02350_FinalProject;component/Images/DiagramObjects/Comment_100x100.png"/>
                         <Label Content="Comment" VerticalAlignment="Center" FontSize="16" FontWeight="Bold"/>

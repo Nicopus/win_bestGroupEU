@@ -132,8 +132,47 @@ namespace _02350_FinalProject.ViewModel
             }
         }
 
-        public RelayCommand<MouseButtonEventArgs> CreateShapeInCanvasCommand
+
+        public RelayCommand ClassPressedCommand => new RelayCommand(ClassPressed);
+        public RelayCommand UsagePressedCommand => new RelayCommand(UsagePressed);
+        public RelayCommand UnidirPressedCommand => new RelayCommand(UnidirPressed);
+        public RelayCommand BidirPressedCommand => new RelayCommand(BidirPressed);
+        public RelayCommand CompPressedCommand => new RelayCommand(CompPressed);
+        public RelayCommand CommentPressedCommand => new RelayCommand(CommentPressed);
+
+        public RelayCommand<MouseButtonEventArgs> CreateObjectInCanvasCommand
             => new RelayCommand<MouseButtonEventArgs>(OnClickCreateObject, CanCreateObject);
+        //public RelayCommand<> AddConnectionBetweenObjectsCommand = new RelayCommand<>;
+
+        private void ClassPressed()
+        {
+
+        }
+
+        private void UsagePressed()
+        {
+
+        }
+
+        private void UnidirPressed()
+        {
+
+        }
+
+        private void BidirPressed()
+        {
+
+        }
+
+        private void CompPressed()
+        {
+
+        }
+
+        private void CommentPressed()
+        {
+
+        } 
 
         private bool CanCreateObject(MouseButtonEventArgs e)
         {
