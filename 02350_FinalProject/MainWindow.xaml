@@ -14,18 +14,12 @@
         ResizeMode="CanResize"
         MinHeight="480"
         MinWidth="620">
- 
+
     <Window.DataContext>
         <viewModel:MainViewModel></viewModel:MainViewModel>
     </Window.DataContext>
-    <Window.InputBindings>
-        <KeyBinding Command="{Binding ClassPressedCommand}" Key="1"/>
-        <KeyBinding Command="{Binding UsagePressedCommand}" Key="2"/>
-        <KeyBinding Command="{Binding UnidirPressedCommand}" Key="3"/>
-        <KeyBinding Command="{Binding BidirPressedCommand}" Key="4"/>
-        <KeyBinding Command="{Binding CompPressedCommand}" Key="5"/>
-        <KeyBinding Command="{Binding CommentPressedCommand}" Key="6"/>
-    </Window.InputBindings>
+
+
     <Window.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>

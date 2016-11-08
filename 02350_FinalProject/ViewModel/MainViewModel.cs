@@ -3,7 +3,7 @@ using System.Windows.Input;
 
 namespace _02350_FinalProject.ViewModel
 {
-    class MainViewModel : BaseViewModel
+    public class MainViewModel : BaseViewModel
     {
         private bool _isAddingClassPressed;
         private bool _isAddingUsagePressed;
