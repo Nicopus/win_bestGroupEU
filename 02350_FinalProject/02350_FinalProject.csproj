@@ -87,6 +87,7 @@
     <Compile Include="Model\IDataService.cs" />
     <Compile Include="Model\IObject.cs" />
     <Compile Include="Model\Object.cs" />
+    <Compile Include="ViewModel\BaseViewModel.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
     <Compile Include="ViewModel\ViewModelLocator.cs" />
     <Compile Include="View\UserControls\ClassUserControl.xaml.cs">

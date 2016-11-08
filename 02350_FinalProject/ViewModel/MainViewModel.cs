@@ -1,65 +1,149 @@
-﻿using GalaSoft.MvvmLight;
-using _02350_FinalProject.Model;
+﻿using GalaSoft.MvvmLight.CommandWpf;
+using System.Windows.Input;
 
 namespace _02350_FinalProject.ViewModel
 {
-    /// <summary>
-    /// This class contains properties that the main View can data bind to.
-    /// <para>
-    /// See http://www.mvvmlight.net
-    /// </para>
-    /// </summary>
-    public class MainViewModel : ViewModelBase
+    class MainViewModel : BaseViewModel
     {
-        private readonly IDataService _dataService;
+        private bool _isAddingClassPressed;
+        private bool _isAddingUsagePressed;
+        private bool _isAddingUnidirPressed;
+        private bool _isAddingBidirPressed;
+        private bool _isAddingCompPressed;
+        private bool _isAddingCommentPressed;
 
-        /// <summary>
-        /// The <see cref="WelcomeTitle" /> property's name.
-        /// </summary>
-        public const string WelcomeTitlePropertyName = "WelcomeTitle";
-
-        private string _welcomeTitle = string.Empty;
-
-        /// <summary>
-        /// Gets the WelcomeTitle property.
-        /// Changes to that property's value raise the PropertyChanged event. 
-        /// </summary>
-        public string WelcomeTitle
+        public bool IsAddingClassPressed
         {
-            get
-            {
-                return _welcomeTitle;
-            }
+            get { return _isAddingClassPressed; }
             set
             {
-                Set(ref _welcomeTitle, value);
+                _isAddingClassPressed = value;
+                if (value)
+                {
+                    //IsAddingClassPressed = false;
+                    IsAddingUsagePressed = false;
+                    IsAddingUnidirPressed = false;
+                    IsAddingBidirPressed = false;
+                    IsAddingCompPressed = false;
+                    IsAddingCommentPressed = false;
+                }
+                OnPropertyChanged();
+                System.Diagnostics.Debug.WriteLine(_isAddingClassPressed);
             }
         }
 
-        /// <summary>
-        /// Initializes a new instance of the MainViewModel class.
-        /// </summary>
-        public MainViewModel(IDataService dataService)
+        public bool IsAddingUsagePressed
         {
-            _dataService = dataService;
-            _dataService.GetData(
-                (item, error) =>
+            get { return _isAddingUsagePressed; }
+            set
+            {
+                _isAddingUsagePressed = value;
+                if (value)
                 {
-                    if (error != null)
-                    {
-                        // Report error here
-                        return;
-                    }
-
-                    WelcomeTitle = item.Title;
-                });
+                    IsAddingClassPressed = false;
+                    //IsAddingUsagePressed = false;
+                    IsAddingUnidirPressed = false;
+                    IsAddingBidirPressed = false;
+                    IsAddingCompPressed = false;
+                    IsAddingCommentPressed = false;
+                }
+                OnPropertyChanged();
+                System.Diagnostics.Debug.WriteLine(_isAddingUsagePressed);
+            }
         }
 
-        ////public override void Cleanup()
-        ////{
-        ////    // Clean up if needed
+        public bool IsAddingUnidirPressed
+        {
+            get { return _isAddingUnidirPressed; }
+            set
+            {
+                _isAddingUnidirPressed = value;
+                if (value)
+                {
+                    IsAddingClassPressed = false;
+                    IsAddingUsagePressed = false;
+                    //IsAddingUnidirPressed = false;
+                    IsAddingBidirPressed = false;
+                    IsAddingCompPressed = false;
+                    IsAddingCommentPressed = false;
+                }
+                OnPropertyChanged();
+                System.Diagnostics.Debug.WriteLine(_isAddingUnidirPressed);
+            }
+        }
 
-        ////    base.Cleanup();
-        ////}
+        public bool IsAddingBidirPressed
+        {
+            get { return _isAddingBidirPressed; }
+            set
+            {
+                _isAddingBidirPressed = value;
+                if (value)
+                {
+                    IsAddingClassPressed = false;
+                    IsAddingUsagePressed = false;
+                    IsAddingUnidirPressed = false;
+                    //IsAddingBidirPressed = false;
+                    IsAddingCompPressed = false;
+                    IsAddingCommentPressed = false;
+                }
+                OnPropertyChanged();
+                System.Diagnostics.Debug.WriteLine(_isAddingBidirPressed);
+            }
+        }
+
+        public bool IsAddingCompPressed
+        {
+            get { return _isAddingCompPressed; }
+            set
+            {
+                _isAddingCompPressed = value;
+                if (value)
+                {
+                    IsAddingClassPressed = false;
+                    IsAddingUsagePressed = false;
+                    IsAddingUnidirPressed = false;
+                    IsAddingBidirPressed = false;
+                    //IsAddingCompPressed = false;
+                    IsAddingCommentPressed = false;
+                }
+                OnPropertyChanged();
+                System.Diagnostics.Debug.WriteLine(_isAddingCompPressed);
+            }
+        }
+
+        public bool IsAddingCommentPressed
+        {
+            get { return _isAddingCommentPressed; }
+            set
+            {
+                _isAddingCommentPressed = value;
+                if (value)
+                {
+                    IsAddingClassPressed = false;
+                    IsAddingUsagePressed = false;
+                    IsAddingUnidirPressed = false;
+                    IsAddingBidirPressed = false;
+                    IsAddingCompPressed = false;
+                    //IsAddingCommentPressed = false;
+                }
+                OnPropertyChanged();
+                System.Diagnostics.Debug.WriteLine(_isAddingCommentPressed);
+            }
+        }
+
+        public RelayCommand<MouseButtonEventArgs> CreateShapeInCanvasCommand
+            => new RelayCommand<MouseButtonEventArgs>(OnClickCreateObject, CanCreateObject);
+
+        private bool CanCreateObject(MouseButtonEventArgs e)
+        {
+            return IsAddingClassPressed;
+        }
+
+        private void OnClickCreateObject(MouseButtonEventArgs e)
+        {
+            System.Diagnostics.Debug.WriteLine("Det virker");
+        }
+
     }
 }

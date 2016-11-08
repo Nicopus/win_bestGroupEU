@@ -18,7 +18,7 @@ namespace _02350_FinalProject.View.UserControls
     /// <summary>
     /// Interaction logic for ClassUserControl.xaml
     /// </summary>
-    public partial class ClassUserControl : UserControl
+    public partial class ClassUserControl : Border
     {
         public ClassUserControl()
         {
