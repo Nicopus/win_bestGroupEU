@@ -7,6 +7,7 @@
         xmlns:local="clr-namespace:_02350_FinalProject"
         xmlns:userControls="clr-namespace:_02350_FinalProject.View.UserControls"
         xmlns:ignore="http://www.galasoft.ch/ignore"
+        xmlns:ec="clr-namespace:_02350_FinalProject.View.ExtendedComponent"
         mc:Ignorable="d ignore"
         Title="BestClassdiagramModelerEU"
         WindowState="Maximized"
@@ -46,10 +47,13 @@
                              Viewport="0,0,40,40" ViewportUnits="Absolute" 
                              Viewbox="0,0,40,40" ViewboxUnits="Absolute">
                     <VisualBrush.Visual>
-                        <Rectangle Stroke="Black" StrokeThickness="0.05" Height="40" Width="40"/>
+                        <Rectangle Stroke="Black" StrokeThickness="1.05" Height="40" Width="40"/>
                     </VisualBrush.Visual>
                 </VisualBrush>
             </Grid.Background>
+            <ec:ElementListBox x:Name="ElementControl" ItemsSource="{Binding Elements}">
+
+            </ec:ElementListBox>
         </Grid>
     </DockPanel>
 

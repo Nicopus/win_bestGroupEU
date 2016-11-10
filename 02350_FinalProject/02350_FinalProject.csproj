@@ -88,10 +88,14 @@
     <Compile Include="Model\IObject.cs" />
     <Compile Include="Model\Object.cs" />
     <Compile Include="ViewModel\BaseViewModel.cs" />
+    <Compile Include="ViewModel\Elements\ClassElementViewModel.cs" />
     <Compile Include="ViewModel\Elements\ElementViewModel.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
     <Compile Include="ViewModel\ObservableElementsCollection.cs" />
     <Compile Include="ViewModel\ViewModelLocator.cs" />
+    <Compile Include="View\ExtendedComponents\ElementListBox.xaml.cs">
+      <DependentUpon>ElementListBox.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\UserControls\ClassUserControl.xaml.cs">
       <DependentUpon>ClassUserControl.xaml</DependentUpon>
     </Compile>
@@ -127,6 +131,10 @@
     <Page Include="Skins\MainSkin.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\ExtendedComponents\ElementListBox.xaml">
+      <SubType>Form</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\UserControls\ClassUserControl.xaml">
       <SubType>Designer</SubType>

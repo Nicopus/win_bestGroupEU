@@ -9,13 +9,18 @@ namespace _02350_FinalProject.ViewModel.Elements
 {
     public abstract class ElementViewModel : BaseViewModel, IObject
     {
-        public abstract List<string> Data { get; set; }
+        public List<string> Data { get; set; }
         protected Model.Object element { get; }
         public double CenterX => Width / 2 + X;
         public double CenterY => Height / 2 + Y;
 
         public int Number => element.Number;
         public EObject Type => element.Type;
+
+        public ElementViewModel(Model.Object element)
+        {
+            this.element = element;
+        }
 
         public double Height
         {

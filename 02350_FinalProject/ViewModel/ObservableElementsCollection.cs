@@ -8,8 +8,11 @@ using System.Threading.Tasks;
 
 namespace _02350_FinalProject.ViewModel
 {
-    class ObservableElementsCollection : ObservableCollection<ElementViewModel>
+    public class ObservableElementsCollection : ObservableCollection<ElementViewModel>
     {
-
+        public new void Add(ElementViewModel element)
+        {
+            base.Add(element);
+        }
     }
 }

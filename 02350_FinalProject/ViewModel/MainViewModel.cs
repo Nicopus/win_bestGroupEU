@@ -1,16 +1,31 @@
-﻿using GalaSoft.MvvmLight.CommandWpf;
+﻿using _02350_FinalProject.ViewModel.Elements;
+using GalaSoft.MvvmLight.CommandWpf;
+using System.Collections.Generic;
 using System.Windows.Input;
 
 namespace _02350_FinalProject.ViewModel
 {
     public class MainViewModel : BaseViewModel
     {
+
+        #region BindableProperties
+        public ObservableElementsCollection Elements { get; }
+        #endregion
+
         private bool _isAddingClassPressed;
         private bool _isAddingUsagePressed;
         private bool _isAddingUnidirPressed;
         private bool _isAddingBidirPressed;
         private bool _isAddingCompPressed;
         private bool _isAddingCommentPressed;
+
+        public MainViewModel() : base()
+        {
+            Elements = new ObservableElementsCollection()
+            {
+                new ClassElementViewModel() {  X = 300, Y = 400, Width = 800, Height = 800 }
+            };
+        } 
 
         public bool IsAddingClassPressed
         {
